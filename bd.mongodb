@@ -1,0 +1,467 @@
+use("Sebas_Tech")
+db.createCollection("Celulares")
+db.createCollection("Laptops")
+db.createCollection("Auriculares")
+db.createCollection("Funkos")
+
+use("Sebas_Tech")
+db.Celulares.insertMany([
+    {
+        nombre: "iPhone 13",
+        precio: 1099.99,
+        fechaLanzamiento: new Date("2022/09/14"),
+        color: "Plata",
+        version: "1",
+        marca: {
+            nombre: "Apple",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Samsung Galaxy S21",
+        precio: 999.99,
+        fechaLanzamiento: new Date("2021/01/29"),
+        color: "Negro",
+        version: "1",
+        marca: {
+            nombre: "Samsung",
+            ubicacion: "Corea del Sur",
+        }
+    },
+    {
+        nombre: "OnePlus 9",
+        precio: 799.99,
+        fechaLanzamiento: new Date("2021/03/23"),
+        color: "Verde",
+        version: "1",
+        marca: {
+            nombre: "OnePlus",
+            ubicacion: "China",
+        }
+    },
+    {
+        nombre: "Google Pixel 6",
+        precio: 899.99,
+        fechaLanzamiento: new Date("2021/10/19"),
+        color: "Blanco",
+        version: "1",
+        marca: {
+            nombre: "Google",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Redmi note 8 Pro",
+        precio: 299.99,
+        fechaLanzamiento: new Date("2018/05/19"),
+        color: "Azul",
+        version: "1",
+        marca: {
+            nombre: "Xiaomi",
+            ubicacion: "China",
+        }
+    },
+    {
+        nombre: "Google Pixel 8 Pro",
+        precio: 1199.99,
+        fechaLanzamiento: new Date("2023/12/12"),
+        color: "Negro",
+        version: "1",
+        marca: {
+            nombre: "Google",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Samsung A54",
+        precio: 349.99,
+        fechaLanzamiento: new Date("2022/12/10"),
+        color: "Rosa",
+        version: "1",
+        marca: {
+            nombre: "Samsung",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Moto E40 Edge Neo",
+        precio: 399.99,
+        fechaLanzamiento: new Date("2023/11/01"),
+        color: "Blanco",
+        version: "1",
+        marca: {
+            nombre: "Motorola",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Nokia 1",
+        precio: 99.99,
+        fechaLanzamiento: new Date("1999/10/10"),
+        color: "Gris",
+        version: "1",
+        marca: {
+            nombre: "Nokia",
+            ubicacion: "México",
+        }
+    },
+    {
+        nombre: "Samsung j6 prime",
+        precio: 199.99,
+        fechaLanzamiento: new Date("2016/01/21"),
+        color: "Purpura",
+        version: "1",
+        marca: {
+            nombre: "Samsung",
+            ubicacion: "Estados Unidos",
+        }
+    },
+])
+
+///////////////////////////////////////////
+
+db.Laptops.find()
+
+use("Sebas_Tech")
+db.Laptops.insertMany([
+    {
+        nombre: "Laptop Ultrabook X1 Carbon",
+        precio: 1499.99,
+        fechaLanzamiento: new Date("2023/05/10"),
+        color: "Gris",
+        tamaño: "14 pulgadas",
+        ram: "16 GB",
+        rom: "512 GB SSD",
+        marca: {
+            nombre: "Lenovo",
+            ubicacion: "China",
+        }
+    },
+    {
+        nombre: "Laptop Gaming Predator Helios 300",
+        precio: 1799.99,
+        fechaLanzamiento: new Date("2023/04/01"),
+        color: "Negro y Rojo",
+        tamaño: "15.6 pulgadas",
+        ram: "32 GB",
+        rom: "1 TB SSD",
+        marca: {
+            nombre: "Acer",
+            ubicacion: "Taiwán",
+        }
+    },
+    {
+        nombre: "Laptop MacBook Pro",
+        precio: 2399.99,
+        fechaLanzamiento: new Date("2023/03/15"),
+        color: "Plata",
+        tamaño: "16 pulgadas",
+        ram: "32 GB",
+        rom: "1 TB SSD",
+        marca: {
+            nombre: "Apple",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Laptop Dell XPS 13",
+        precio: 1299.99,
+        fechaLanzamiento: new Date("2023/02/20"),
+        color: "Blanco",
+        tamaño: "13.4 pulgadas",
+        ram: "8 GB",
+        rom: "256 GB SSD",
+        marca: {
+            nombre: "Dell",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Laptop ASUS ZenBook 14",
+        precio: 1099.99,
+        fechaLanzamiento: new Date("2023/06/05"),
+        color: "Azul",
+        tamaño: "14 pulgadas",
+        ram: "12 GB",
+        rom: "512 GB SSD",
+        marca: {
+            nombre: "ASUS",
+            ubicacion: "Taiwán",
+        }
+    },
+    {
+        nombre: "Laptop HP Spectre x360",
+        precio: 1299.99,
+        fechaLanzamiento: new Date("2023/07/12"),
+        color: "Oro Rosa",
+        tamaño: "13.3 pulgadas",
+        ram: "16 GB",
+        rom: "1 TB SSD",
+        marca: {
+            nombre: "HP",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Laptop MSI GS66 Stealth",
+        precio: 1999.99,
+        fechaLanzamiento: new Date("2023/08/20"),
+        color: "Negro",
+        tamaño: "15.6 pulgadas",
+        ram: "32 GB",
+        rom: "1 TB SSD",
+        marca: {
+            nombre: "MSI",
+            ubicacion: "Taiwán",
+        }
+    },
+    {
+        nombre: "Laptop LG Gram 17",
+        precio: 1699.99,
+        fechaLanzamiento: new Date("2023/09/18"),
+        color: "Plata",
+        tamaño: "17 pulgadas",
+        ram: "16 GB",
+        rom: "512 GB SSD",
+        marca: {
+            nombre: "LG",
+            ubicacion: "Corea del Sur",
+        }
+    },
+    {
+        nombre: "Laptop Microsoft Surface Laptop 4",
+        precio: 1499.99,
+        fechaLanzamiento: new Date("2023/10/15"),
+        color: "Platino",
+        tamaño: "13.5 pulgadas",
+        ram: "8 GB",
+        rom: "256 GB SSD",
+        marca: {
+            nombre: "Microsoft",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Laptop Lenovo Legion 7",
+        precio: 2299.99,
+        fechaLanzamiento: new Date("2023/11/25"),
+        color: "Negro",
+        tamaño: "15.6 pulgadas",
+        ram: "32 GB",
+        rom: "1 TB SSD",
+        marca: {
+            nombre: "Lenovo",
+            ubicacion: "China",
+        }
+    },
+])
+
+
+/////////////////////////////////////
+
+
+db.Auriculares.find()
+
+use("Sebas_Tech")
+db.Auriculares.insertMany([
+    {
+        nombre: "Auriculares Inalámbricos AirPods Pro",
+        precio: 249.99,
+        fechaLanzamiento: new Date("2019/10/30"),
+        color: "Blanco",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Apple",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Auriculares Over-Ear Sony WH-1000XM4",
+        precio: 349.99,
+        fechaLanzamiento: new Date("2020/08/06"),
+        color: "Negro",
+        tamaño: "Grande",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Sony",
+            ubicacion: "Japón",
+        }
+    },
+    {
+        nombre: "Auriculares In-Ear Jabra Elite 75t",
+        precio: 179.99,
+        fechaLanzamiento: new Date("2019/12/01"),
+        color: "Titanio Negro",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Jabra",
+            ubicacion: "Dinamarca",
+        }
+    },
+    {
+        nombre: "Auriculares Gaming HyperX Cloud II",
+        precio: 99.99,
+        fechaLanzamiento: new Date("2015/02/09"),
+        color: "Rojo y Negro",
+        tamaño: "Mediano",
+        conexión: "Cable USB",
+        marca: {
+            nombre: "HyperX",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Auriculares Deportivos Bose SoundSport",
+        precio: 149.99,
+        fechaLanzamiento: new Date("2016/02/25"),
+        color: "Aqua",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Bose",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Auriculares True Wireless Samsung Galaxy Buds+",
+        precio: 129.99,
+        fechaLanzamiento: new Date("2020/02/14"),
+        color: "Negro",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Samsung",
+            ubicacion: "Corea del Sur",
+        }
+    },
+    {
+        nombre: "Auriculares Inalámbricos Bose QuietComfort Earbuds",
+        precio: 279.99,
+        fechaLanzamiento: new Date("2020/09/29"),
+        color: "Negro",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Bose",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Auriculares Gaming Razer BlackShark V2",
+        precio: 99.99,
+        fechaLanzamiento: new Date("2020/06/11"),
+        color: "Negro",
+        tamaño: "Mediano",
+        conexión: "Con cable",
+        marca: {
+            nombre: "Razer",
+            ubicacion: "Estados Unidos",
+        }
+    },
+    {
+        nombre: "Auriculares In-Ear Sennheiser Momentum True Wireless 2",
+        precio: 299.99,
+        fechaLanzamiento: new Date("2020/05/07"),
+        color: "Negro",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Sennheiser",
+            ubicacion: "Alemania",
+        }
+    },
+    {
+        nombre: "Auriculares Deportivos Jaybird Vista",
+        precio: 179.99,
+        fechaLanzamiento: new Date("2019/08/15"),
+        color: "Negro",
+        tamaño: "Pequeño",
+        conexión: "Bluetooth",
+        marca: {
+            nombre: "Jaybird",
+            ubicacion: "Estados Unidos",
+        }
+    }
+]);
+
+
+
+db.Funkos.find()
+use("Sebas_Tech")
+db.Funkos.insertMany([
+    {
+        nombre: "Funko Pop! Iron Man",
+        precio: 14.99,
+        fechaLanzamiento: new Date("2012/03/15"),
+        color: "Rojo y Dorado",
+        tamaño: "10 cm",
+    },
+    {
+        nombre: "Funko Pop! Harry Potter",
+        precio: 9.99,
+        fechaLanzamiento: new Date("2015/06/22"),
+        color: "Varios colores",
+        tamaño: "8 cm",
+    },
+    {
+        nombre: "Funko Pop! Darth Vader",
+        precio: 19.99,
+        fechaLanzamiento: new Date("2013/11/10"),
+        color: "Negro",
+        tamaño: "15 cm",
+    },
+    {
+        nombre: "Funko Pop! Wonder Woman",
+        precio: 12.99,
+        fechaLanzamiento: new Date("2017/05/08"),
+        color: "Azul y Rojo",
+        tamaño: "12 cm",
+    },
+    {
+        nombre: "Funko Pop! Spider-Man",
+        precio: 14.99,
+        fechaLanzamiento: new Date("2014/08/30"),
+        color: "Rojo y Azul",
+        tamaño: "10 cm",
+    },
+    {
+        nombre: "Funko Pop! The Mandalorian",
+        precio: 24.99,
+        fechaLanzamiento: new Date("2019/12/01"),
+        color: "Plateado",
+        tamaño: "12 cm",
+    },
+    {
+        nombre: "Funko Pop! Batman",
+        precio: 11.99,
+        fechaLanzamiento: new Date("2016/04/18"),
+        color: "Negro",
+        tamaño: "9 cm",
+    },
+    {
+        nombre: "Funko Pop! Elsa",
+        precio: 16.99,
+        fechaLanzamiento: new Date("2014/11/25"),
+        color: "Azul y Blanco",
+        tamaño: "10 cm",
+    },
+    {
+        nombre: "Funko Pop! Pikachu",
+        precio: 8.99,
+        fechaLanzamiento: new Date("2018/07/10"),
+        color: "Amarillo",
+        tamaño: "8 cm",
+    },
+    {
+        nombre: "Funko Pop! Baby Yoda",
+        precio: 29.99,
+        fechaLanzamiento: new Date("2020/02/15"),
+        color: "Verde",
+        tamaño: "11 cm",
+    },
+])
+
+
+
